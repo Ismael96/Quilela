@@ -64,15 +64,35 @@ public class Quiniela extends javax.swing.JFrame {
         jPanel3.setLayout(new java.awt.GridLayout(4, 1, 4, 4));
 
         jBnuevo.setText("Nuevo");
+        jBnuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBnuevoActionPerformed(evt);
+            }
+        });
         jPanel3.add(jBnuevo);
 
         jBeliminar.setText("Eliminar");
+        jBeliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBeliminarActionPerformed(evt);
+            }
+        });
         jPanel3.add(jBeliminar);
 
         jButton3.setText("Realizar Quiniela");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton3);
 
         jBresetear.setText("Resetear");
+        jBresetear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBresetearActionPerformed(evt);
+            }
+        });
         jPanel3.add(jBresetear);
 
         getContentPane().add(jPanel3, java.awt.BorderLayout.CENTER);
@@ -89,6 +109,22 @@ public class Quiniela extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBnuevoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBnuevoActionPerformed
+
+    private void jBeliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBeliminarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBeliminarActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jBresetearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBresetearActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBresetearActionPerformed
 
     /**
      * @param args the command line arguments
