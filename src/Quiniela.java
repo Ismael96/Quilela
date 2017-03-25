@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -111,8 +114,21 @@ public class Quiniela extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBnuevoActionPerformed
-       jTPartidos.setText("");
-       jTPartidos = null;
+       
+        String respuesta = (String) JOptionPane.showInputDialog(
+                this,
+                "Partido",
+                "Partido",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                null,
+                null);
+        if ((respuesta != null) && (respuesta.length() > 0)) {
+            System.out.println("Has elegido " + respuesta);
+            
+           
+        }
+    jTPartidos.setText(respuesta);
     }//GEN-LAST:event_jBnuevoActionPerformed
 
     private void jBeliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBeliminarActionPerformed
@@ -124,7 +140,8 @@ public class Quiniela extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jBresetearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBresetearActionPerformed
-        // TODO add your handling code here:
+        jTPartidos.setText("");
+        jTPartidos = null;
     }//GEN-LAST:event_jBresetearActionPerformed
 
     /**
