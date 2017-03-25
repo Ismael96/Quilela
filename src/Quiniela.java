@@ -26,18 +26,66 @@ public class Quiniela extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLTitulo = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTPartidos = new javax.swing.JTextArea();
+        jPanel3 = new javax.swing.JPanel();
+        jBnuevo = new javax.swing.JButton();
+        jBeliminar = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jBresetear = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTResultado = new javax.swing.JTextArea();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+
+        jLTitulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLTitulo.setForeground(new java.awt.Color(255, 0, 51));
+        jLTitulo.setText("Quiniela");
+        jPanel1.add(jLTitulo, new java.awt.GridBagConstraints());
+
+        getContentPane().add(jPanel1, java.awt.BorderLayout.NORTH);
+
+        jPanel2.setLayout(new java.awt.GridLayout());
+
+        jTPartidos.setColumns(20);
+        jTPartidos.setRows(5);
+        jScrollPane1.setViewportView(jTPartidos);
+
+        jPanel2.add(jScrollPane1);
+
+        getContentPane().add(jPanel2, java.awt.BorderLayout.WEST);
+
+        jPanel3.setLayout(new java.awt.GridLayout(4, 1, 4, 4));
+
+        jBnuevo.setText("Nuevo");
+        jPanel3.add(jBnuevo);
+
+        jBeliminar.setText("Eliminar");
+        jPanel3.add(jBeliminar);
+
+        jButton3.setText("Realizar Quiniela");
+        jPanel3.add(jButton3);
+
+        jBresetear.setText("Resetear");
+        jPanel3.add(jBresetear);
+
+        getContentPane().add(jPanel3, java.awt.BorderLayout.CENTER);
+
+        jPanel4.setLayout(new java.awt.GridLayout());
+
+        jTResultado.setColumns(20);
+        jTResultado.setRows(5);
+        jScrollPane2.setViewportView(jTResultado);
+
+        jPanel4.add(jScrollPane2);
+
+        getContentPane().add(jPanel4, java.awt.BorderLayout.EAST);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -78,5 +126,18 @@ public class Quiniela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBeliminar;
+    private javax.swing.JButton jBnuevo;
+    private javax.swing.JButton jBresetear;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLTitulo;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTPartidos;
+    private javax.swing.JTextArea jTResultado;
     // End of variables declaration//GEN-END:variables
 }
