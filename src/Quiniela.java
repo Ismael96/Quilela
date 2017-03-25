@@ -111,7 +111,8 @@ public class Quiniela extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBnuevoActionPerformed
-        // TODO add your handling code here:
+       jTPartidos.setText("");
+       jTPartidos = null;
     }//GEN-LAST:event_jBnuevoActionPerformed
 
     private void jBeliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBeliminarActionPerformed
